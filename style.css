@@ -1,0 +1,77 @@
+* {margin: 0; padding: 0;}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+section#topVew {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    animation: hiddnTopVew forwards 1s 2s;
+
+    z-index: 100000;
+}
+
+section div#topVewTxtWrap {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 100010;
+
+    color: #fff;
+
+    font-family: "lato","Helvetica Neue","Helvetica",Verdana,Arial,"BIZ UDGothic","BIZ UDゴシック","源真ゴシック","Noto Sans JP","Noto Sans CJK JP","M PLUS 1p","Hiragino Sans","Hiragino Kaku Gothic ProN","hiragino kaku gothic pro","HiraKakuProN-W3","ヒラギノ角ゴ pro w3","Yu Gothic",sans-serif;
+}
+
+section div#topVewTxtWrap p {
+    font-size: 5rem;
+
+    text-align: center;
+    white-space: nowrap;
+
+    font-weight: 500;
+}
+section div#topVewTxtWrap span {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+section div#topVewImgCover {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0; left: 0;
+
+    background-color: rgba(0,0,0, 0.2);
+
+    z-index: 100005;
+}
+
+section div#topVewImgWrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+}
+section div#topVewImgWrap img {
+    width: 50%;
+    height: 50%;
+
+    object-fit: cover;
+}
+
+@keyframes hiddnTopVew {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
